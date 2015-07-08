@@ -1,0 +1,38 @@
+@import "mixins.less";
+.pagination-container {
+  border: 1px solid #cccccc;
+  .page-number {
+    margin: 2px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #cccccc;
+    line-height: 30px;
+    cursor: pointer;
+    color: #aaaaaa;
+    .userSelectNone;
+  }
+  .page-number:hover {
+    background: #eeeeee;
+  }
+  .current {
+    background: #eeeeee;
+  }
+  .page-selector {
+    cursor: pointer;
+    background-color: #b9def0;
+  }
+  .page-selector:hover {
+    background-color: #269abc;
+  }
+  .decrease {
+    float: left;
+  }
+  .increase {
+    float: right;
+  }
+  .decrease:after,
+  .increase:after{
+    clear: both;
+  }
+}

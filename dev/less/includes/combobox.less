@@ -1,0 +1,50 @@
+@import "mixins.less";
+.combo-box {
+  position: relative;
+  display : inline-block;
+  .combo-box--edit {
+    input {
+      padding-right: 20px;
+      font-size: 0.8em;
+    }
+    span {
+      display: block;
+      position: absolute;
+      right: 6px;
+      top: 0;
+      cursor: pointer;
+      .userSelectNone;
+    }
+  }
+  .combo-box--list {
+    position: absolute;
+    top: 100%;
+    margin-top: 1px;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+    border: solid 1px #aaaaaa;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100px;
+    .list-item {
+      cursor: pointer;
+      padding-left: 5px;
+      width: 100%;
+      white-space: nowrap;
+      display: inline-block;
+      text-align: left;
+      font-size: 0.8em;
+      .userSelectNone;
+    }
+    .list-item:hover {
+      background-color: #eeeeee;
+    }
+    .alert {
+      color: red;
+    }
+  }
+  .combo-box--list[data-hidden=true] {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+@import 'mixins.less';
+.issues-container,
+.issue-container {
+  width : 100%;
+}
+.issues-container {
+  margin-top: 2px;
+  border: 1px solid #ccc;
+  .alert {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: red;
+  }
+  .issue-container {
+    clear: both;
+    padding: 10px;
+    .avatar-container {
+      border: 1px solid black;
+      width : 50px;
+      height : 50px;
+      float: left;
+      .dropShadow;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .issue-details {
+      text-align: left;
+      div {
+        color: #aaaaaa;
+        margin-right: 20px;
+        display: inline-block;
+        font-size: 0.8em;
+      }
+    }
+    .issue-content{
+      overflow: hidden;
+      padding-left: 20px;
+      .issue-label,
+      .issue-user{
+        text-align: left;
+        span {
+          display: inline-block;
+        }
+        a {
+          color: #555;
+          display: inline-block;
+        }
+      }
+      .issue-label {
+        color: #666;
+        font-size: 0.9em;
+      }
+      .issue-user{
+        color: #aaaaaa;
+        font-size: 0.8em;
+        a {
+          color: #aaaaaa;
+        }
+      }
+    }
+
+  }
+}
